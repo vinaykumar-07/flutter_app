@@ -107,29 +107,32 @@ class _TennisPageState extends State<TennisPage> {
               ),
               Row(
                 children: [
-                  const Spacer(),
+                  
                   Expanded(
-                    child: TextField(
-                      decoration: const InputDecoration(
-                        labelText: 'Search by league id or name',
-                        labelStyle: TextStyle(fontSize: 12),
-                        enabledBorder: OutlineInputBorder(
-                          borderSide:
-                              BorderSide(color: Colors.grey, width: 1.0),
+                    child: Container(
+                       margin: const EdgeInsets.only(left: 10, right: 90),
+                      child: TextField(
+                        decoration: const InputDecoration(
+                          labelText: 'Search by league id or name',
+                          labelStyle: TextStyle(fontSize: 12),
+                          enabledBorder: OutlineInputBorder(
+                            borderSide:
+                                BorderSide(color: Colors.grey, width: 1.0),
+                          ),
+                          focusedBorder: OutlineInputBorder(
+                            borderSide:
+                                BorderSide(color: Colors.blue, width: 2.0),
+                          ),
+                          contentPadding: EdgeInsets.symmetric(
+                              horizontal: 16.0, vertical: 8.0),
                         ),
-                        focusedBorder: OutlineInputBorder(
-                          borderSide:
-                              BorderSide(color: Colors.blue, width: 2.0),
-                        ),
-                        contentPadding: EdgeInsets.symmetric(
-                            horizontal: 16.0, vertical: 8.0),
+                        onChanged: (value) {
+                          filterList(value);
+                        },
                       ),
-                      onChanged: (value) {
-                        filterList(value);
-                      },
                     ),
                   ),
-                  const Spacer()
+                  
                 ],
               ),
               const SizedBox(
