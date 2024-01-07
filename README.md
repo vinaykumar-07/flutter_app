@@ -20,9 +20,9 @@ samples, guidance on mobile development, and a full API reference.
 
 
 ## how to run this flutter_app on our device
-# clone this project 
-# write command in terminal flutter clean
-# if you want to run on chrome then write flutter run chrome -d
-# if you want to run on emulator then select device after that flutter run
-# befor going to flutter build apk --split-per-abi you have to add <uses-permission android:name="android.permission.INTERNET"/> in side the manifest tag in androidmanifest.xml file, if added ignore
-[  here i have give the apk link ](https://drive.google.com/file/d/1-Yl18IzZhRa-fsco5PRXRTIa8kZwl6GP/view?usp=drive_link)
+- clone this project 
+- write command in terminal flutter clean
+- if you want to run on chrome then write flutter run -d chrome 
+- if you want to run on emulator then select device after that flutter run
+- befor going to flutter build apk --split-per-abi you have to add <uses-permission android:name="android.permission.INTERNET"/> in side the manifest tag in androidmanifest.xml file, if added ignore
+##[apk link](https://drive.google.com/file/d/1-Yl18IzZhRa-fsco5PRXRTIa8kZwl6GP/view?usp=drive_link)
